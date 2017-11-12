@@ -18,7 +18,7 @@ class Anagram
   #end
 
   def match(words)
-    words.select { |word| 
+    words.select { |word|
     is_anagram
     }
   end
