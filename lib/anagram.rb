@@ -11,7 +11,7 @@ class Anagram
     result = []
     anagrams.each { |anagram|
       if word.sort == anagram.sort
-        result << w
+        result << anagram
       end
     }
     result
