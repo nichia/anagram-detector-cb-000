@@ -6,15 +6,24 @@ class Anagram
     @anagram = word
   end
 
+  #def match(words)
+  #  anagrams = words
+  #  result = []
+  #  anagrams.each { |word|
+  #    if word.split("").sort == anagram.split("").sort
+  #      result << word
+  #    end
+  #  }
+  #  result
+  #end
+
   def match(words)
-    anagrams = words
-    result = []
-    anagrams.each { |word|
-      if word.split("").sort == anagram.split("").sort
-        result << word
-      end
+    words.select { |word| 
+    is_anagram
     }
-    result
   end
 
+  def is_anagram(word)
+    anagram.split("").sort == word.splt("").sort
+  end
 end
