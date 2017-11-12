@@ -16,5 +16,5 @@ class Anagram
     }
     result
   end
-  
+
 end
