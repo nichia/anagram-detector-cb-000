@@ -9,8 +9,8 @@ class Anagram
   def match(words)
     anagrams = words.split(" ")
     result = []
-    anagrams.each { |w|
-      if word.sort == w.sort
+    anagrams.each { |anagram|
+      if word.sort == anagram.sort
         result << w
       end
     }
