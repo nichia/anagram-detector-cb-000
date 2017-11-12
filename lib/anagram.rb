@@ -19,11 +19,11 @@ class Anagram
 
   def match(words)
     words.select { |word|
-    is_anagram?(word)
+      is_anagram?(word)
     }
   end
 
   def is_anagram?(word)
-    anagram.split("").sort == word.splt("").sort
+    word.split("").sort == anagram.split("").sort
   end
 end
