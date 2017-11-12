@@ -9,11 +9,12 @@ class Anagram
   def match(words)
     anagrams = words.split(" ")
     result = []
-    anagrams.each { |w| 
+    anagrams.each { |w|
       if word.sort == w.sort
         result << w
       end
-    end
+    }
     result
   end
+  
 end
